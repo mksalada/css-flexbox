@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content &mdash; Flexbox Alignment</title>
+</head>
+<body>
+    <h2>CSS Flexbox Alignment: <code>justify-content</code> Property</h2>
+    <p>Notice: these will not be effective on mobile screen sizes</p>
+
+    <div class="container">
+        <pre><code>.content {
+    display: flex;
+}</code></pre>
+        <br><br>
+
+        <pre><code>.content1 {
+    justify-content: flex-start;
+}
+/* default */
+/* this will not be effective on mobile screen sizes */</code></pre>
+        <br>
+        <div class="content content1">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+        <br><br><br>
+
+        <pre><code>.content2 {
+    justify-content: flex-end;
+} /* this will not be effective on mobile screen sizes */</code></pre>
+        <br>
+        <div class="content content2">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+        <br><br><br>
+
+        <pre><code>.content3 {
+    justify-content: center;
+} /* this will not be effective on mobile screen sizes */</code></pre>
+        <br>
+        <div class="content content3">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+        <br><br><br>
+
+        <pre><code>.content4 {
+    justify-content: space-between;
+} /* this will not be effective on mobile screen sizes */</code></pre>
+        <br>
+        <div class="content content4">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+        <br><br><br>
+
+        <pre><code>.content5 {
+    justify-content: space-around;
+} /* this will not be effective on mobile screen sizes */</code></pre>
+        <br>
+        <div class="content content5">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+        <br><br><br>
+
+        <pre><code>.content6 {
+    justify-content: space-evenly;
+} /* this will not be effective on mobile screen sizes */</code></pre>
+        <br>
+        <div class="content content6">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+    </div>
+
+    <style text="text/css">
+        /* Body */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h2 {
+            padding: 30px;
+        }
+        h2 code {
+            color: firebrick;
+        }
+        p {
+            padding: 20px 30px;
+        }
+
+        /* Container */
+        .container {
+            background: lightgrey;
+            padding: 30px;
+        }
+
+        /* Content */
+        .content {
+            border: 1px solid black;
+            background: lightblue;
+            display: flex;
+            height: 250px;
+        }
+        .content1 {
+            justify-content: flex-start;
+        }
+        .content2 {
+            justify-content: flex-end;
+        }
+        .content3 {
+            justify-content: center;
+        }
+        .content4 {
+            justify-content: space-between;
+        }
+        .content5 {
+            justify-content: space-around;
+        }
+        .content6 {
+            justify-content: space-evenly;
+        }
+
+        /* Items */
+        .items {
+            border: 2px solid black;
+            height: 150px;
+            width: 200px;
+            margin: 5px;
+        }
+        .item1 {
+            background: lightcoral;
+        }
+        .item2 {
+            background: lightgreen;
+        }
+    </style>
+</body>
+</html>
