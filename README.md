@@ -1,4 +1,5 @@
 # CSS Flexbox
+This is how CSS Flexbox works.
 
 * [flex-direction](flex-direction.html)
 * items
