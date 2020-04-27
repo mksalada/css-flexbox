@@ -1,0 +1,19 @@
+/* CSS File for the PRE & CODE Tags */
+
+pre {
+    font-size: 16px;
+}
+
+/* Code */
+.items code {
+    font-size: 16px;
+}
+code.css-property {
+    color: darkblue;
+}
+code.css-value {
+    color: darkred;
+}
+code.comment {
+    color: darkgreen;
+}
