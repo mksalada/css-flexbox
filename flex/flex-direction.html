@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-direction &mdash; Flexbox</title>
+
+    <!-- Style for the Main Web Page -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Style for the PRE & CODE Tags -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Style for the Flexboxes -->
+    <style text="text/css">
+        /* Content */
+        .content {
+            display: flex;
+        }
+        .content1 {
+            flex-direction: row;
+        }
+        .content2 {
+            flex-direction: row-reverse;
+        }
+        .content3 {
+            flex-direction: column;
+        }
+        .content4 {
+            flex-direction: column-reverse;
+        }
+
+        /* Items */
+        .items {
+            border: 2px solid black;
+            height: 150px;
+            width: 200px;
+            margin: 5px;
+        }
+        .item1 {
+            background: lightcoral;
+        }
+        .item2 {
+            background: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        CSS Flexbox: <code>flex-direction</code> Property
+    </header>
+
+    <div class="container">
+        <pre><code>.content {
+    <code class="css-property">display</code>: <code class="css-value">flex</code>;
+}</code></pre>
+        <br><br>
+
+        <pre><code>.content1 {
+    <code class="css-property">flex-direction</code>: <code class="css-value">row</code>;
+} <code class="comment">/* default */</code></code></pre>
+        <br>
+        <div class="content content1">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+        <br><br><br>
+
+        <pre><code>.content2 {
+    <code class="css-property">flex-direction</code>: <code class="css-value">row-reverse</code>;
+}</code></pre>
+        <br>
+        <div class="content content2">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+        <br><br><br>
+
+        <pre><code>.content3 {
+    <code class="css-property">flex-direction</code>: <code class="css-value">column</code>;
+}</code></pre>
+        <br>
+        <div class="content content3">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+        <br><br><br>
+
+        <pre><code>.content4 {
+    <code class="css-property">flex-direction</code>: <code class="css-value">column-reverse</code>;
+}</code></pre>
+        <br>
+        <div class="content content4">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="../main.html">Home</a> |
+        <a href="#">About</a> |
+        CSS Flexbox &COPY; 2020 <a href="https://mksalada.tk" target="_blank">MK Salada</a>
+    </footer>
+</body>
+</html>
