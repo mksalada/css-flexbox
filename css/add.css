@@ -1,0 +1,27 @@
+/* CSS file ofor the main page / index */
+header {
+    color: firebrick;
+}
+header p {
+    color: black;
+}
+
+/* Add on Container */
+
+.container ul.menu-link li a, ul.menu-inside-link li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.container ul.menu-link li a:hover, ul.menu-inside-link li a:hover{
+    text-decoration: underline;
+}
+.container ul.menu-link li, ul.menu-inside-link li{
+    padding-bottom: 10px;
+}
+ul.menu-link li {
+    list-style-type: disc;
+}
+ul.menu-inside-link li{
+    list-style-type: circle;
+}
