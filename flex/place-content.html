@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>place-content &mdash; Flexbox Alignment</title>
+
+    <!-- Style for the Main Web Page -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Style for the PRE & CODE Tags -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Style for the Flexboxes -->
+    <style text="text/css">
+        /* Content */
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            height: 500px;
+        }
+        .content1 {
+            place-content: flex-start flex-start;
+        }
+        .content2 {
+            place-content: flex-end flex-end;
+        }
+        .content3 {
+            place-content: center center;
+        }
+        .content4 {
+            place-content: space-between space-between;
+        }
+        .content5 {
+            place-content: space-around space-around;
+        }
+        .content6 {
+            place-content: space-evenly space-evenly;
+        }
+
+        /* Items */
+        .items {
+            border: 2px solid black;
+            height: 150px;
+            width: 200px;
+            margin: 5px;
+        }
+        .item1 {
+            background: lightcoral;
+        }
+        .item2 {
+            background: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        CSS Flexbox Alignment: <code>place-content</code> Property
+        <p class="notice">
+            Notice: Except for the center center value of the place-content property, everything will not display for both in row and column.
+        </p>
+    </header>
+
+    <div class="container">
+        <pre><code>.content {
+    <code class="css-property">display</code>: <code class="css-value">flex</code>;
+    <code class="css-property">flex-wrap</code>: <code class="css-value">wrap</code>;
+}</code></pre>
+        <br><br>
+
+        <pre><code>.content1 {
+    <code class="css-property">place-content</code>: <code class="css-value">flex-start flex-start</code>;
+}
+<code class="comment">/* default */</code>
+<code class="comment">/*
+    desktop/tablet screens:
+        space-between is effective on rows
+
+    mobile screens:
+        space-between is effective on columns
+*/</code></code></pre>
+        <br>
+        <div class="content content1">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+        <br><br><br>
+
+        <pre><code>.content2 {
+    <code class="css-property">place-content</code>: <code class="css-value">flex-end flex-end</code>;
+}
+<code class="comment">/*
+    desktop/tablet screens:
+        space-between is effective on rows
+
+    mobile screens:
+        space-between is effective on columns
+*/</code></code></pre>
+        <br>
+        <div class="content content2">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+        <br><br><br>
+
+        <pre><code>.content3 {
+    <code class="css-property">place-content</code>: <code class="css-value">center center</code>;
+}</code></pre>
+        <br>
+        <div class="content content3">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+        <br><br><br>
+
+        <pre><code>.content4 {
+    <code class="css-property">place-content</code>: <code class="css-value">space-between space-between</code>;
+}
+<code class="comment">/*
+    desktop/tablet screens:
+        space-between is effective on rows
+
+    mobile screens:
+        space-between is effective on columns
+*/</code></code></pre>
+        <br>
+        <div class="content content4">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+        <br><br><br>
+
+        <pre><code>.content5 {
+    <code class="css-property">place-content</code>: <code class="css-value">space-around space-around</code>;
+}
+<code class="comment">/*
+    desktop/tablet screens:
+        space-between is effective on rows
+
+    mobile screens:
+        space-between is effective on columns
+*/</code></code></pre>
+        <br>
+        <div class="content content5">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+        <br><br><br>
+
+        <pre><code>.content6 {
+    <code class="css-property">place-content</code>: <code class="css-value">space-evenly space-evenly</code>;
+}
+<code class="comment">/*
+    desktop/tablet screens:
+        space-between is effective on rows
+
+    mobile screens:
+        space-between is effective on columns
+*/</code></code></pre>
+        <br>
+        <div class="content content6">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="../main.html">Home</a> |
+        <a href="#">About</a> |
+        CSS Flexbox &COPY; 2020 <a href="https://mksalada.tk" target="_blank">MK Salada</a>
+    </footer>
+</body>
+</html>
