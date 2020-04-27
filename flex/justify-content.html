@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content &mdash; Flexbox Alignment</title>
+
+    <!-- Style for the Main Web Page -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Style for the PRE & CODE Tags -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Style for the Flexboxes -->
+    <style text="text/css">
+        /* Content */
+        .content {
+            display: flex;
+            height: 250px;
+            width: 300px;
+        }
+        .content1 {
+            justify-content: flex-start;
+        }
+        .content2 {
+            justify-content: flex-end;
+        }
+        .content3 {
+            justify-content: center;
+        }
+        .content4 {
+            justify-content: space-between;
+        }
+        .content5 {
+            justify-content: space-around;
+        }
+        .content6 {
+            justify-content: space-evenly;
+        }
+
+        /* Items */
+        .items {
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+        }
+        .item1 {
+            background: lightcoral;
+        }
+        .item2 {
+            background: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        CSS Flexbox Alignment: <code>justify-content</code> Property
+    </header>
+
+    <div class="container">
+        <pre><code>.content {
+    <code class="css-property">display</code>: <code class="css-value">flex</code>;
+}</code></pre>
+        <br><br>
+
+        <pre><code>.content1 {
+    <code class="css-property">justify-content</code>: <code class="css-value">flex-start</code>;
+}
+<code class="comment">/* default */</code></code></pre>
+        <br>
+        <div class="content content1">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+        <br><br><br>
+
+        <pre><code>.content2 {
+    <code class="css-property">justify-content</code>: <code class="css-value">flex-end</code>;
+}</code></pre>
+        <br>
+        <div class="content content2">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+        <br><br><br>
+
+        <pre><code>.content3 {
+    <code class="css-property">justify-content</code>: <code class="css-value">center</code>;
+}</code></pre>
+        <br>
+        <div class="content content3">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+        <br><br><br>
+
+        <pre><code>.content4 {
+    <code class="css-property">justify-content</code>: <code class="css-value">space-between</code>;
+}</code></pre>
+        <br>
+        <div class="content content4">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+        <br><br><br>
+
+        <pre><code>.content5 {
+    <code class="css-property">justify-content</code>: <code class="css-value">space-around</code>;
+}</code></pre>
+        <br>
+        <div class="content content5">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+        <br><br><br>
+
+        <pre><code>.content6 {
+    <code class="css-property">justify-content</code>: <code class="css-value">space-evenly</code>;
+}</code></pre>
+        <br>
+        <div class="content content6">
+            <div class="items item1">
+                <code>.item1</code>
+            </div>
+            <div class="items item2">
+                <code>.item2</code>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="../main.html">Home</a> |
+        <a href="#">About</a> |
+        CSS Flexbox &COPY; 2020 <a href="https://mksalada.tk" target="_blank">MK Salada</a>
+    </footer>
+</body>
+</html>
