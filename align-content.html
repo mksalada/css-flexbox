@@ -7,7 +7,6 @@
 </head>
 <body>
     <h2>CSS Flexbox Alignment: <code>align-content</code> Property</h2>
-    <p>Notice: part of these may not work on desktop and tablet screen sizes</p>
 
     <div class="container">
         <pre><code>.content {
@@ -18,7 +17,7 @@
 
         <pre><code>.content1 {
     align-content: flex-start;
-} /* Default */</code></pre>
+} /* default */</code></pre>
         <br>
         <div class="content content1">
             <div class="items item1">
@@ -60,7 +59,7 @@
 
         <pre><code>.content4 {
     justify-content: space-between;
-} /* only effective on mobile size screens */</code></pre>
+}</code></pre>
         <br>
         <div class="content content4">
             <div class="items item1">
@@ -74,7 +73,7 @@
 
         <pre><code>.content5 {
     align-content: space-around;
-} /* only effective on mobile size screens */</code></pre>
+}</code></pre>
         <br>
         <div class="content content5">
             <div class="items item1">
@@ -88,7 +87,7 @@
 
         <pre><code>.content6 {
     align-content: space-evenly;
-} /* only effective on mobile size screens */</code></pre>
+}</code></pre>
         <br>
         <div class="content content6">
             <div class="items item1">
@@ -130,6 +129,7 @@
             display: flex;
             flex-wrap: wrap;
             height: 250px;
+            width: 300px;
         }
         .content1 {
             align-content: flex-start;

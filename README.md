@@ -11,6 +11,6 @@ This is how CSS Flexbox works.
   * [align-content](align-content.html)
   * [place-content](place-content.html)
 * self
-  * justify-content
-  * align-content
-  * place-content
+  * justify-self
+  * align-self
+  * place-self

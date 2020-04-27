@@ -7,7 +7,9 @@
 </head>
 <body>
     <h2>CSS Flexbox Alignment: <code>place-content</code> Property</h2>
-    <p>Notice: part of these may not work on some screen sizes</p>
+    <p>
+        Notice: Except for the center center value of the place-content property, everything will not display for both in row and column.
+    </p>
 
     <div class="container">
         <pre><code>.content {
@@ -18,7 +20,15 @@
 
         <pre><code>.content1 {
     place-content: flex-start flex-start;
-} /* Default */</code></pre>
+}
+/* default */
+/*
+    desktop/tablet screens:
+        space-between is effective on rows
+
+    mobile screens:
+        space-between is effective on columns
+*/</code></pre>
         <br>
         <div class="content content1">
             <div class="items item1">
@@ -32,7 +42,14 @@
 
         <pre><code>.content2 {
     place-content: flex-end flex-end;
-}</code></pre>
+}
+/*
+    desktop/tablet screens:
+        space-between is effective on rows
+
+    mobile screens:
+        space-between is effective on columns
+*/</code></pre>
         <br>
         <div class="content content2">
             <div class="items item1">
@@ -81,7 +98,14 @@
 
         <pre><code>.content5 {
     place-content: space-around space-around;
-} /* only effective on mobile size screens */</code></pre>
+}
+/*
+    desktop/tablet screens:
+        space-between is effective on rows
+
+    mobile screens:
+        space-between is effective on columns
+*/</code></pre>
         <br>
         <div class="content content5">
             <div class="items item1">
@@ -95,7 +119,14 @@
 
         <pre><code>.content6 {
     place-content: space-evenly space-evenly;
-} /* only effective on mobile size screens */</code></pre>
+}
+/*
+    desktop/tablet screens:
+        space-between is effective on rows
+
+    mobile screens:
+        space-between is effective on columns
+*/</code></pre>
         <br>
         <div class="content content6">
             <div class="items item1">

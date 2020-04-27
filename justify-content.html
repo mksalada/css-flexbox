@@ -7,7 +7,6 @@
 </head>
 <body>
     <h2>CSS Flexbox Alignment: <code>justify-content</code> Property</h2>
-    <p>Notice: these will not be effective on mobile screen sizes</p>
 
     <div class="container">
         <pre><code>.content {
@@ -18,8 +17,7 @@
         <pre><code>.content1 {
     justify-content: flex-start;
 }
-/* default */
-/* this will not be effective on mobile screen sizes */</code></pre>
+/* default */</code></pre>
         <br>
         <div class="content content1">
             <div class="items item1">
@@ -33,7 +31,7 @@
 
         <pre><code>.content2 {
     justify-content: flex-end;
-} /* this will not be effective on mobile screen sizes */</code></pre>
+}</code></pre>
         <br>
         <div class="content content2">
             <div class="items item1">
@@ -47,7 +45,7 @@
 
         <pre><code>.content3 {
     justify-content: center;
-} /* this will not be effective on mobile screen sizes */</code></pre>
+}</code></pre>
         <br>
         <div class="content content3">
             <div class="items item1">
@@ -61,7 +59,7 @@
 
         <pre><code>.content4 {
     justify-content: space-between;
-} /* this will not be effective on mobile screen sizes */</code></pre>
+}</code></pre>
         <br>
         <div class="content content4">
             <div class="items item1">
@@ -75,7 +73,7 @@
 
         <pre><code>.content5 {
     justify-content: space-around;
-} /* this will not be effective on mobile screen sizes */</code></pre>
+}</code></pre>
         <br>
         <div class="content content5">
             <div class="items item1">
@@ -89,7 +87,7 @@
 
         <pre><code>.content6 {
     justify-content: space-evenly;
-} /* this will not be effective on mobile screen sizes */</code></pre>
+}</code></pre>
         <br>
         <div class="content content6">
             <div class="items item1">
@@ -130,6 +128,7 @@
             background: lightblue;
             display: flex;
             height: 250px;
+            width: 300px;
         }
         .content1 {
             justify-content: flex-start;
@@ -153,8 +152,8 @@
         /* Items */
         .items {
             border: 2px solid black;
-            height: 150px;
-            width: 200px;
+            height: 100px;
+            width: 100px;
             margin: 5px;
         }
         .item1 {
