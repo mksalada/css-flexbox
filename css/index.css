@@ -1,0 +1,162 @@
+/* CSS file ofor the Index page */
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+}
+
+/* Header */
+header {
+    grid-area: header;
+    padding: 30px 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: firebrick;
+}
+header p {
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+}
+header p.notice {
+    font-size: 16px;
+}
+header code {
+    color: firebrick;
+    font-family: 'Courier New', Courier, monospace;
+}
+header a {
+    color: firebrick;
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    grid-area: content;
+    background: lightgrey;
+}
+.container ul.menu-link li a, ul.menu-inside-link li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.container ul.menu-link li a:hover, ul.menu-inside-link li a:hover{
+    text-decoration: underline;
+}
+.container ul.menu-link li, ul.menu-inside-link li{
+    padding-bottom: 10px;
+}
+ul.menu-link li {
+    list-style-type: disc;
+}
+ul.menu-inside-link li{
+    list-style-type: circle;
+}
+
+/* Content */
+.content {
+    border: 1px solid black;
+    background: lightblue;
+}
+
+/* Repo Div*/
+.repo {
+    padding: 10px;
+}
+.repo a {
+    color: firebrick;
+    text-decoration: none;
+}
+.repo a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+    padding: 30px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+footer a {
+    color: firebrick;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+/*desktop*/
+@media (min-width: 1281px) {
+    body {
+        grid-template-areas:
+        ". header ."
+        ". content ."
+        ". footer .";
+    }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+    body {
+        grid-template-areas:
+        ". header ."
+        ". content ."
+        ". footer .";
+    }
+}
+/*tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        grid-template-areas:
+        "header"
+        "content"
+        "footer";
+    }
+    header, .container, footer {
+        padding: 20px 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    body {
+        grid-template-areas:
+        "header"
+        "content"
+        "footer";
+    }
+    header, .container, footer {
+        padding: 20px 0;
+    }
+}
+/*mobile*/
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        grid-template-areas:
+        "header"
+        "content"
+        "footer";
+    }
+    header, .container, footer {
+        padding: 15px 10px;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        font-size: 16px;
+        grid-template-areas:
+        "header"
+        "content"
+        "footer";
+    }
+    header, .container, footer {
+        padding: 15px 10px;
+    }
+}
