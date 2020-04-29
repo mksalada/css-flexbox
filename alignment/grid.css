@@ -1,0 +1,6 @@
+.parent {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, fit-content(200px));
+    grid-template-rows: repeat(3, fit-content(200px));
+}
