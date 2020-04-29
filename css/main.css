@@ -50,16 +50,6 @@ header a:hover {
     background: lightblue;
 }
 
-/* Repo Div*/
-.repo a {
-    color: firebrick;
-    text-decoration: none;
-}
-.repo a:hover {
-    text-decoration: underline;
-    font-weight: bold;
-}
-
 /* Footer */
 footer {
     grid-area: footer;
