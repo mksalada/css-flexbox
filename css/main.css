@@ -29,6 +29,13 @@ header code {
     color: firebrick;
     font-family: 'Courier New', Courier, monospace;
 }
+header a {
+    color: firebrick;
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+}
 
 /* Container */
 .container {
@@ -41,6 +48,16 @@ header code {
 .content {
     border: 1px solid black;
     background: lightblue;
+}
+
+/* Repo Div*/
+.repo a {
+    color: firebrick;
+    text-decoration: none;
+}
+.repo a:hover {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 /* Footer */
