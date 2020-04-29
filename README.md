@@ -14,4 +14,5 @@ This is how CSS Flexbox works.
 * align-self
 
 This project is maintained by [mksalada](github.com/mksalada/)\
-View GitHub repository: [mksalada/css-flexbox](github.com/mksalada/css-flexbox)
+View GitHub repository: [mksalada/css-flexbox](github.com/mksalada/css-flexbox)\
+Visit Website: [mksalada.github.io/css-flexbox](https://mksalada.github.io/css-flexbox/)
